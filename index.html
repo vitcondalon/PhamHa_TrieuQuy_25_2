@@ -103,7 +103,7 @@
 
         <div class="grid">
           <figure class="card">
-            <img src="3.jpg" alt="Khoảnh khắc trong lớp">
+            <img src="1.jpg" alt="Khoảnh khắc trong lớp">
             <figcaption>Khoảnh khắc trong lớp</figcaption>
           </figure>
 
@@ -113,7 +113,7 @@
           </figure>
 
           <figure class="card">
-            <img src="4.jpg" alt="Bảng xanh - phấn trắng">
+            <img src="3.jpg" alt="Bảng xanh - phấn trắng">
             <figcaption>Bảng xanh - phấn trắng</figcaption>
           </figure>
 
@@ -128,17 +128,31 @@
       <!-- Góc âm nhạc & video -->
       <section id="goc-media" class="section media">
         <h2 class="section-title">Góc âm nhạc và video clip</h2>
-        <div class="media-grid media-grid--one">
-      <div class="media-card">
-        <h3 class="media-title">Video clip</h3>
-          <p class="hint">Đã thay video mẫu bằng file thật: <b>vid_1.mp4</b> (đặt cùng thư mục).</p>
+        <div class="media-grid">
+          <div class="media-card">
+            <h3 class="media-title">Âm nhạc / Voice</h3>
+            <p class="hint">
+            </p>
 
-          <video controls preload="metadata" width="100%">
-        <source src="vid_1.mp4" type="video/mp4">
-        Trình duyệt của bạn không hỗ trợ video.
-        </video>
-      </div>
-    </div>
+            <audio controls preload="metadata">
+              <!-- ✅ Nếu có voice thật, mở dòng dưới và xóa dòng mdn -->
+              <!-- <source src="voice.mp3" type="audio/mpeg"> -->
+
+              <source src="voice.mp3" type="audio/mpeg">
+              Trình duyệt của bạn không hỗ trợ audio.
+            </audio>
+          </div>
+
+          <div class="media-card">
+            <h3 class="media-title">Video clip</h3>
+            <p class="hint">Đã thay video mẫu bằng file thật: <b>vid_1.mp4</b> (đặt cùng thư mục).</p>
+
+            <video controls preload="metadata" width="100%">
+              <source src="vid_1.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ video.
+            </video>
+          </div>
+        </div>
       </section>
 
       <!-- Góc bình luận -->
