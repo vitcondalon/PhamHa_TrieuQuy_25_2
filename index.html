@@ -13,7 +13,6 @@
   <!-- Internal CSS (đúng yêu cầu: có internal + external) -->
   <style>
     .tagline { letter-spacing: .3px; }
-    /* hỗ trợ smooth scroll cho menu */
     html { scroll-behavior: smooth; }
   </style>
 </head>
@@ -100,63 +99,27 @@
       <!-- Góc ảnh -->
       <section id="goc-anh" class="section gallery">
         <h2 class="section-title">Góc ảnh</h2>
-        <p class="hint">Ảnh minh họa dùng SVG nội bộ (chạy ngay). Có thể thay bằng ảnh thật của lớp.</p>
+        <p class="hint">Đã thay ảnh SVG bằng ảnh thật: 1.jpg, 2.jpg, 3.jpg (đặt cùng thư mục với index.html).</p>
 
         <div class="grid">
           <figure class="card">
-            <img alt="Khoảnh khắc trong lớp" src="data:image/svg+xml;utf8,
-              <svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'>
-                <defs>
-                  <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-                    <stop offset='0' stop-color='%23b3e5fc'/>
-                    <stop offset='1' stop-color='%23ffe0b2'/>
-                  </linearGradient>
-                </defs>
-                <rect width='100%25' height='100%25' fill='url(%23g)'/>
-                <rect x='80' y='280' width='640' height='130' rx='18' fill='%23ffffffaa'/>
-                <text x='110' y='340' font-family='Arial' font-size='34' fill='%23222'>Khoảnh khắc trong lớp</text>
-                <text x='110' y='380' font-family='Arial' font-size='22' fill='%23333'>Nụ cười - kỷ niệm - trưởng thành</text>
-              </svg>"/>
+            <img src="3.jpg" alt="Khoảnh khắc trong lớp">
             <figcaption>Khoảnh khắc trong lớp</figcaption>
           </figure>
 
           <figure class="card">
-            <img alt="Chúc mừng 20/11" src="data:image/svg+xml;utf8,
-              <svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'>
-                <defs>
-                  <radialGradient id='r' cx='50%25' cy='35%25' r='70%25'>
-                    <stop offset='0' stop-color='%23fff9c4'/>
-                    <stop offset='1' stop-color='%23ffccbc'/>
-                  </radialGradient>
-                </defs>
-                <rect width='100%25' height='100%25' fill='url(%23r)'/>
-                <text x='90' y='220' font-family='Arial' font-size='48' fill='%23b71c1c'>20/11</text>
-                <text x='90' y='280' font-family='Arial' font-size='30' fill='%23222'>Chúc thầy cô luôn mạnh khỏe</text>
-                <text x='90' y='320' font-family='Arial' font-size='22' fill='%23555'>Và giữ mãi ngọn lửa yêu nghề</text>
-              </svg>"/>
+            <img src="2.jpg" alt="Chúc mừng 20/11">
             <figcaption>Chúc mừng 20/11</figcaption>
           </figure>
 
           <figure class="card">
-            <img alt="Bảng xanh phấn trắng" src="data:image/svg+xml;utf8,
-              <svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'>
-                <rect width='100%25' height='100%25' fill='%23c8e6c9'/>
-                <rect x='70' y='80' width='660' height='340' rx='18' fill='%232e7d32'/>
-                <text x='110' y='170' font-family='Arial' font-size='30' fill='%23ffffff'>Bảng xanh - phấn trắng</text>
-                <text x='110' y='215' font-family='Arial' font-size='22' fill='%23ffffffcc'>Nơi bắt đầu những ước mơ</text>
-              </svg>"/>
+            <img src="4.jpg" alt="Bảng xanh - phấn trắng">
             <figcaption>Bảng xanh - phấn trắng</figcaption>
           </figure>
 
+          <!-- Nếu bạn chỉ có 3 ảnh thì dùng lại 1.jpg cho ô thứ 4 (hoặc thêm 4.jpg rồi sửa lại) -->
           <figure class="card">
-            <img alt="Hoạt động ngoại khóa" src="data:image/svg+xml;utf8,
-              <svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'>
-                <rect width='100%25' height='100%25' fill='%23e1f5fe'/>
-                <rect x='60' y='60' width='680' height='380' rx='22' fill='%23ffffff'/>
-                <path d='M120 360 C220 240, 300 420, 420 300 C520 200, 620 360, 700 250' fill='none' stroke='%23039be5' stroke-width='10'/>
-                <text x='120' y='160' font-family='Arial' font-size='34' fill='%23222'>Hoạt động ngoại khóa</text>
-                <text x='120' y='205' font-family='Arial' font-size='22' fill='%23555'>Gắn kết - năng động - vui vẻ</text>
-              </svg>"/>
+            <img src="1.jpg" alt="Hoạt động ngoại khóa">
             <figcaption>Hoạt động ngoại khóa</figcaption>
           </figure>
         </div>
@@ -167,18 +130,27 @@
         <h2 class="section-title">Góc âm nhạc và video clip</h2>
         <div class="media-grid">
           <div class="media-card">
-            <h3 class="media-title">Âm nhạc</h3>
-            <p class="hint">Audio mẫu CC0 từ MDN. Có thể thay bằng file nhạc của lớp.</p>
-            <audio controls preload="none">
+            <h3 class="media-title">Âm nhạc / Voice</h3>
+            <p class="hint">
+              Nếu bạn có file voice.mp3 (đặt cùng thư mục), hãy đổi source sang <b>voice.mp3</b>.
+              Hiện đang để audio mẫu online để bạn test nhanh.
+            </p>
+
+            <audio controls preload="metadata">
+              <!-- ✅ Nếu có voice thật, mở dòng dưới và xóa dòng mdn -->
+              <!-- <source src="voice.mp3" type="audio/mpeg"> -->
+
               <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
               Trình duyệt của bạn không hỗ trợ audio.
             </audio>
           </div>
+
           <div class="media-card">
             <h3 class="media-title">Video clip</h3>
-            <p class="hint">Video mẫu CC0 từ MDN. Có thể thay bằng clip hoạt động của lớp.</p>
-            <video controls preload="none" width="100%">
-              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <p class="hint">Đã thay video mẫu bằng file thật: <b>vid_1.mp4</b> (đặt cùng thư mục).</p>
+
+            <video controls preload="metadata" width="100%">
+              <source src="vid_1.mp4" type="video/mp4">
               Trình duyệt của bạn không hỗ trợ video.
             </video>
           </div>
@@ -263,7 +235,6 @@
     <div class="copyright">© 2026 - Báo tường điện tử 12A</div>
   </footer>
 
-  <!-- Inline JS (vẫn đảm bảo chỉ có 1 file HTML + 1 file CSS) -->
   <script>
     const STORAGE_KEY = "baotuong_comments_v2";
     const form = document.getElementById("commentForm");
