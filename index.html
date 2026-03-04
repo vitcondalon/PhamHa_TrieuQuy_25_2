@@ -128,33 +128,17 @@
       <!-- Góc âm nhạc & video -->
       <section id="goc-media" class="section media">
         <h2 class="section-title">Góc âm nhạc và video clip</h2>
-        <div class="media-grid">
-          <div class="media-card">
-            <h3 class="media-title">Âm nhạc / Voice</h3>
-            <p class="hint">
-              Nếu bạn có file voice.mp3 (đặt cùng thư mục), hãy đổi source sang <b>voice.mp3</b>.
-              Hiện đang để audio mẫu online để bạn test nhanh.
-            </p>
+        <div class="media-grid media-grid--one">
+      <div class="media-card">
+        <h3 class="media-title">Video clip</h3>
+          <p class="hint">Đã thay video mẫu bằng file thật: <b>vid_1.mp4</b> (đặt cùng thư mục).</p>
 
-            <audio controls preload="metadata">
-              <!-- ✅ Nếu có voice thật, mở dòng dưới và xóa dòng mdn -->
-              <!-- <source src="voice.mp3" type="audio/mpeg"> -->
-
-              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
-              Trình duyệt của bạn không hỗ trợ audio.
-            </audio>
-          </div>
-
-          <div class="media-card">
-            <h3 class="media-title">Video clip</h3>
-            <p class="hint">Đã thay video mẫu bằng file thật: <b>vid_1.mp4</b> (đặt cùng thư mục).</p>
-
-            <video controls preload="metadata" width="100%">
-              <source src="vid_1.mp4" type="video/mp4">
-              Trình duyệt của bạn không hỗ trợ video.
-            </video>
-          </div>
-        </div>
+          <video controls preload="metadata" width="100%">
+        <source src="vid_1.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+        </video>
+      </div>
+    </div>
       </section>
 
       <!-- Góc bình luận -->
